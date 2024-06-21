@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" integrity="" crossorigin="">
+    <link rel="stylesheet" href="assets/miestilo.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg bg-body-info ">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <a class="navbar-brand me-auto barra" href="....">
+                  <!-- Logo de la Empresa -->
+                  <img src="assets/img/logo-cafe.jpeg" alt="marca" width="75" height="30" class="img-fluid"/>
+              </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="quienes_somos.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="acerca_de.html">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="registro.html">Registrarse</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Inicio de Sesión</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search" name="searchForm"> <!-- Agregado el atributo name -->
+              <input class="form-control me-2" type="search" placeholder="buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Fin de Navegación -->
+    <div class="container mt-5 mb-5 d-flex justify-content-center">
+        <div class="card" style="width: 50%;">
+            <div class="card-header text-center">
+                <h2>Iniciar sesion</h2>
+            </div>
+            <!-- Mensaje de Error -->
+            <div class="alert alert-warning" role="alert">
+                <!-- Aquí puedes agregar manualmente cualquier mensaje de error si es necesario -->
+            </div>
+            <!-- Inicio del formulario de login-->
+            <form method="post" action="/enviarlogin">
+                <div class="card-body">
+                    <div class="mb-2">
+                        <label for="email" class="form-label">Correo</label> 
+                        <input name="email" type="text" class="form-control" placeholder="Correo" required>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="pass" class="form-label">Password</label> 
+                        <input name="pass" type="password" class="form-control" placeholder="contraseña" required>
+                    </div>
+    
+                    <input type="submit" value="Ingresar" class="btn btn-success" style="background-color: #654321; border-color: #654321;">
+                    <a href="/login" class="btn btn-danger">Cancelar</a> 
+                    <br> <span>¿Aún no se registró? <a href="registro.html"> Registrarse aquí</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer bg-dark text-white p-3">
+        <div class="footer-content">
+          <div class="social-icons">
+            <a href="" class="social-icon"><img src="assets/img/facebook.png" alt="Facebook"> </a>
+            <a href="" class="social-icon"><img src="assets/img/instagram.png" alt="Instagram"> </a>
+            <a href="" class="social-icon"><img src="assets/img/gorjeo.png" alt="Twitter"> </a>
+          </div>
+          <p>Derechos de autor Mauro Martinez © 2024 | Empresa de Cafes</p>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+    </html>
